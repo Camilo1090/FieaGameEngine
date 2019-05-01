@@ -1,0 +1,54 @@
+{
+	"ATable": {
+		"type": "table",
+		"value": [
+			{
+				"type": "table",
+				"value": {
+					"Name": {
+						"type": "string",
+						"value": "Laser Sight"
+					},
+					"Damage": {
+						"type": "float",
+						"value": 5.25
+					}
+				}
+			},
+			{
+				"type": "table",
+				"value": {
+					"Name": {
+						"type": "string",
+						"value": "Laser Sight"
+					},
+					"Damage": {
+						"type": "float",
+						"value": 5.25
+					}
+				}
+			},
+			{
+				"type": "table",
+				"value": {
+					"Name": {
+						"type": "string",
+						"value": "Laser Sight"
+					},
+					"Damage": {
+						"type": "float",
+						"value": 5.25
+					}
+				}
+			}
+		]
+	},
+	"Health": {
+		"type": "integer",
+		"value": 100
+	},
+	"Name": {
+		"value": "Camilo",
+		"type": "string"
+	}
+}

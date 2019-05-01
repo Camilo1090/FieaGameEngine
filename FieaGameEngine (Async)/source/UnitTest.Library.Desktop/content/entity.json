@@ -1,0 +1,121 @@
+{
+	"Name": {
+		"type": "string",
+		"value": "Entity 1"
+	},
+	"Actions": {
+		"type": "table",
+		"value": [
+			{
+				"type": "table",
+				"class": "ActionIncrement",
+				"value": {
+					"Target": {
+						"type": "string",
+						"value": "A"
+					},
+					"Name": {
+						"type": "string",
+						"value": "Increment"
+					}
+				}
+			},
+			{
+				"type": "table",
+				"class": "ActionList",
+				"value": {
+					"Name": {
+						"type": "string",
+						"value": "List of Actions"
+					},
+					"Actions": {
+						"type": "table",
+						"value": [
+							{
+								"type": "table",
+								"class": "ActionListIf",
+								"value": {
+									"Name": {
+										"type": "string",
+										"value": "List If"
+									},
+									"Condition": {
+										"type": "integer",
+										"value": 0
+									},
+									"True": {
+										"type": "integer",
+										"value": 1
+									},
+									"False": {
+										"type": "integer",
+										"value": 0
+									},
+									"Actions": {
+										"type": "table",
+										"value": [
+											{
+												"type": "table",
+												"class": "ActionIncrement",
+												"value": {
+													"Name": {
+														"type": "string",
+														"value": "Increment"
+													},
+													"Target": {
+														"type": "string",
+														"value": "Condition"
+													}
+												}
+											},
+											{
+												"type": "table",
+												"class": "ActionIncrement",
+												"value": {
+													"Name": {
+														"type": "string",
+														"value": "Increment"
+													},
+													"Target": {
+														"type": "string",
+														"value": "C"
+													}
+												}
+											}
+										]
+									}
+								}
+							},
+							{
+								"type": "table",
+								"class": "ActionIncrement",
+								"value": {
+									"Name": {
+										"type": "string",
+										"value": "Increment"
+									},
+									"Target": {
+										"type": "string",
+										"value": "B"
+									}
+								}
+							}
+						]
+					}
+				}
+			}
+		]
+	},
+	"A": {
+		"type": "integer",
+		"value": 0
+	},
+	"B": {
+		"type": "float",
+		"value": 0.5
+	},
+	"C": {
+		"type": "integer",
+		"value": 0
+	}
+}

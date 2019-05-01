@@ -1,0 +1,187 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClInclude Include="pch.h" />
+    <ClInclude Include="Foo.h">
+      <Filter>Support Code</Filter>
+    </ClInclude>
+    <ClInclude Include="ToStringSpecializations.h">
+      <Filter>Support Code</Filter>
+    </ClInclude>
+    <ClInclude Include="Utility.h">
+      <Filter>Support Code</Filter>
+    </ClInclude>
+    <ClInclude Include="DefaultHashFooSpecialization.h">
+      <Filter>Support Code</Filter>
+    </ClInclude>
+    <ClInclude Include="AttributedFoo.h">
+      <Filter>Support Code</Filter>
+    </ClInclude>
+    <ClInclude Include="AttributedBar.h">
+      <Filter>Support Code</Filter>
+    </ClInclude>
+    <ClInclude Include="JsonDepthHelper.h">
+      <Filter>Json</Filter>
+    </ClInclude>
+    <ClInclude Include="JsonIntHelper.h">
+      <Filter>Json</Filter>
+    </ClInclude>
+    <ClInclude Include="Avatar.h">
+      <Filter>Support Code</Filter>
+    </ClInclude>
+    <ClInclude Include="FooSubscriber.h">
+      <Filter>Support Code</Filter>
+    </ClInclude>
+    <ClInclude Include="EnqueueEventSubscriber.h">
+      <Filter>Support Code</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="pch.cpp" />
+    <ClCompile Include="Foo.cpp">
+      <Filter>Support Code</Filter>
+    </ClCompile>
+    <ClCompile Include="FooTest.cpp">
+      <Filter>Tests</Filter>
+    </ClCompile>
+    <ClCompile Include="SListTest.cpp">
+      <Filter>Tests</Filter>
+    </ClCompile>
+    <ClCompile Include="SListIteratorTest.cpp">
+      <Filter>Tests</Filter>
+    </ClCompile>
+    <ClCompile Include="VectorTest.cpp">
+      <Filter>Tests</Filter>
+    </ClCompile>
+    <ClCompile Include="VectorIteratorTest.cpp">
+      <Filter>Tests</Filter>
+    </ClCompile>
+    <ClCompile Include="HashMapTest.cpp">
+      <Filter>Tests</Filter>
+    </ClCompile>
+    <ClCompile Include="HashMapIteratorTest.cpp">
+      <Filter>Tests</Filter>
+    </ClCompile>
+    <ClCompile Include="DefaultHashSpecializationsTest.cpp">
+      <Filter>Tests</Filter>
+    </ClCompile>
+    <ClCompile Include="DatumTest.cpp">
+      <Filter>Tests</Filter>
+    </ClCompile>
+    <ClCompile Include="ScopeTest.cpp">
+      <Filter>Tests</Filter>
+    </ClCompile>
+    <ClCompile Include="AttributedTest.cpp">
+      <Filter>Tests</Filter>
+    </ClCompile>
+    <ClCompile Include="AttributedFoo.cpp">
+      <Filter>Support Code</Filter>
+    </ClCompile>
+    <ClCompile Include="TypeManagerTest.cpp">
+      <Filter>Tests</Filter>
+    </ClCompile>
+    <ClCompile Include="AttributedBar.cpp">
+      <Filter>Support Code</Filter>
+    </ClCompile>
+    <ClCompile Include="RTTITest.cpp">
+      <Filter>Tests</Filter>
+    </ClCompile>
+    <ClCompile Include="JsoncppTest.cpp">
+      <Filter>Tests</Filter>
+    </ClCompile>
+    <ClCompile Include="JsonDepthHelper.cpp">
+      <Filter>Json</Filter>
+    </ClCompile>
+    <ClCompile Include="JsonParseMasterTest.cpp">
+      <Filter>Tests</Filter>
+    </ClCompile>
+    <ClCompile Include="JsonIntHelper.cpp">
+      <Filter>Json</Filter>
+    </ClCompile>
+    <ClCompile Include="JsonTableParseHelperTest.cpp">
+      <Filter>Tests</Filter>
+    </ClCompile>
+    <ClCompile Include="FactoryTest.cpp">
+      <Filter>Tests</Filter>
+    </ClCompile>
+    <ClCompile Include="TestModuleInitialize.cpp">
+      <Filter>Tests</Filter>
+    </ClCompile>
+    <ClCompile Include="WorldTest.cpp">
+      <Filter>Tests</Filter>
+    </ClCompile>
+    <ClCompile Include="Avatar.cpp">
+      <Filter>Support Code</Filter>
+    </ClCompile>
+    <ClCompile Include="EntityTest.cpp">
+      <Filter>Tests</Filter>
+    </ClCompile>
+    <ClCompile Include="GameTimeTest.cpp">
+      <Filter>Tests</Filter>
+    </ClCompile>
+    <ClCompile Include="SectorTest.cpp">
+      <Filter>Tests</Filter>
+    </ClCompile>
+    <ClCompile Include="ActionTest.cpp">
+      <Filter>Tests</Filter>
+    </ClCompile>
+    <ClCompile Include="EventQueueTest.cpp">
+      <Filter>Tests</Filter>
+    </ClCompile>
+    <ClCompile Include="EventTest.cpp">
+      <Filter>Tests</Filter>
+    </ClCompile>
+    <ClCompile Include="FooSubscriber.cpp">
+      <Filter>Support Code</Filter>
+    </ClCompile>
+    <ClCompile Include="ReactionTest.cpp">
+      <Filter>Tests</Filter>
+    </ClCompile>
+    <ClCompile Include="EnqueueEventSubscriber.cpp">
+      <Filter>Support Code</Filter>
+    </ClCompile>
+    <ClCompile Include="AsyncEventsTest.cpp">
+      <Filter>Tests</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Tests">
+      <UniqueIdentifier>{7b3cf84e-5092-4ba3-ae5d-a8040d36a9f5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Support Code">
+      <UniqueIdentifier>{228940cd-66da-49ad-8350-784a8a293d05}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Json">
+      <UniqueIdentifier>{be18f6f9-d9d4-4d59-8b12-298e278c23d1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Content">
+      <UniqueIdentifier>{8faa2b0e-f644-492b-88e4-c0a233ad229b}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="content\json\depth.json">
+      <Filter>Content</Filter>
+    </None>
+    <None Include="content\json\table.json">
+      <Filter>Content</Filter>
+    </None>
+    <None Include="content\json\attributed_foo.json">
+      <Filter>Content</Filter>
+    </None>
+    <None Include="content\world.json">
+      <Filter>Content</Filter>
+    </None>
+    <None Include="content\sector.json">
+      <Filter>Content</Filter>
+    </None>
+    <None Include="content\entity.json">
+      <Filter>Content</Filter>
+    </None>
+    <None Include="content\reaction.json">
+      <Filter>Content</Filter>
+    </None>
+    <None Include="content\actions.json">
+      <Filter>Content</Filter>
+    </None>
+  </ItemGroup>
+</Project>

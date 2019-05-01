@@ -1,0 +1,202 @@
+{
+	"ExternalInteger": {
+		"type": "integer",
+		"value": 100
+	},
+	"ExternalFloat": {
+		"type": "float",
+		"value": 10.5
+	},
+	"ExternalVector": {
+		"type": "vector",
+		"value": " vec4( 1, 2, 3, 4 ) "
+	},
+	"ExternalMatrix": {
+		"type": "matrix",
+		"value": "mat4x4((1,2,3,4), (5,6,7,8), (9,10,11,12),                  (13,14,15,16))"
+	},
+	"ExternalString": {
+		"type": "string",
+		"value": "Test String"
+	},
+	"ExternalIntegerArray": {
+		"type": "integer",
+		"value": [ 1, 2, 3, 4, 5 ]
+	},
+	"ExternalFloatArray": {
+		"type": "float",
+		"value": [ 1.5, 2.5, 3.5, 4.5, 5.5 ]
+	},
+	"ExternalVectorArray": {
+		"value": [ " vec4( 1, 2, 3, 4 ) ", " vec4( 1, 2, 3, 4 ) ", " vec4( 1, 2, 3, 4 ) ", " vec4( 1, 2, 3, 4 ) ", " vec4( 1, 2, 3, 4 ) " ],
+		"type": "vector"
+	},
+	"ExternalMatrixArray": {
+		"type": "matrix",
+		"value": [ "mat4x4((1,2,3,4), (5,6,7,8), (9,10,11,12), (13,14,15,16))", "mat4x4((1,2,3,4), (5,6,7,8), (9,10,11,12), (13,14,15,16))", "mat4x4((1,2,3,4), (5,6,7,8), (9,10,11,12), (13,14,15,16))", "mat4x4((1,2,3,4), (5,6,7,8), (9,10,11,12), (13,14,15,16))", "mat4x4((1,2,3,4), (5,6,7,8), (9,10,11,12), (13,14,15,16))" ]
+	},
+	"NestedScope": {
+		"type": "table",
+		"value": {
+			"Name": {
+				"type": "string",
+				"value": "Camilo"
+			}
+		}
+	},
+	"NestedScopes": {
+		"type": "table",
+		"value": [
+			{
+				"type": "table",
+				"value": {
+					"Name": {
+						"type": "string",
+						"value": "Camilo"
+					}
+				}
+			},
+			{
+				"type": "table",
+				"value": {
+					"Name": {
+						"type": "string",
+						"value": "Erika"
+					}
+				}
+			},
+			{
+				"type": "table",
+				"value": {
+					"Name": {
+						"type": "string",
+						"value": "Jesus"
+					}
+				}
+			},
+			{
+				"type": "table",
+				"value": {
+					"Name": {
+						"type": "string",
+						"value": "Melissa"
+					}
+				}
+			},
+			{
+				"type": "table",
+				"value": {
+					"Name": {
+						"type": "string",
+						"value": "Martha"
+					}
+				}
+			}
+		]
+	},
+	"NestedScopeArray": {
+		"type": "table",
+		"value": [
+			{
+				"type": "table",
+				"value": {
+					"Name": {
+						"type": "string",
+						"value": "Camilo1"
+					},
+					"EvenMoreScopes": {
+						"value": [
+							{
+								"type": "table",
+								"value": {
+									"Name": {
+										"type": "string",
+										"value": "Camilo1-1"
+									}
+								}
+							},
+							{
+								"type": "table",
+								"value": {
+									"Name": {
+										"type": "string",
+										"value": "Erika1-2"
+									},
+									"MoarNestedScopes": {
+										"type": "table",
+										"value": [
+											{
+												"type": "table",
+												"value": {
+													"Integers": {
+														"type": "integer",
+														"value": [ 1, 2, 3, 4, 5 ]
+													}
+												}
+											},
+											{
+												"type": "table",
+												"value": {
+													"Integers": {
+														"type": "integer",
+														"value": [ 6, 7, 8, 9, 10 ]
+													}
+												}
+											}
+										]
+									}
+								}
+							},
+							{
+								"type": "table",
+								"value": {
+									"Name": {
+										"type": "string",
+										"value": "Jesus1-3"
+									}
+								}
+							}
+						],
+						"type": "table"
+					}
+				}
+			},
+			{
+				"type": "table",
+				"value": {
+					"Name": {
+						"type": "string",
+						"value": "Erika"
+					}
+				}
+			},
+			{
+				"type": "table",
+				"value": {
+					"Name": {
+						"type": "string",
+						"value": "Jesus"
+					}
+				}
+			},
+			{
+				"type": "table",
+				"value": {
+					"Name": {
+						"type": "string",
+						"value": "Melissa"
+					}
+				}
+			},
+			{
+				"type": "table",
+				"value": {
+					"Name": {
+						"type": "string",
+						"value": "Martha"
+					}
+				}
+			}
+		]
+	}
+}
