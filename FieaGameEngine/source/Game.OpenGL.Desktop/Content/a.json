@@ -1,0 +1,56 @@
+{
+	"Name": {
+		"type": "string",
+		"value": "World"
+	},
+	"Sectors": {
+		"type": "table",
+		"value": [
+			{
+				"type": "table",
+				"class": "Sector",
+				"value": {
+					"Name": {
+						"type": "string",
+						"value": "Sector"
+					},
+					"Entities": {
+						"type": "table",
+						"value": [
+							{
+								"type": "table",
+								"class": "GameObject",
+								"value": {
+									"Name": {
+										"type": "string",
+										"value": "asdasdsa"
+									},
+									"Transform": {
+										"type": "table",
+										"class": "Transform",
+										"value": {
+											"Position": {
+												"type": "vector",
+												"value": "vec4(1,1,0,0)"
+											}
+										}
+									},
+									"Collider": {
+										"type": "table",
+										"class": "CircleCollider",
+										"value": {
+											"CollisionChannel": {
+												"type": "integer",
+												"value": 4
+											}
+										}
+									}
+								}
+							}
+						]
+					}
+				}
+			}
+		]
+	}
+}

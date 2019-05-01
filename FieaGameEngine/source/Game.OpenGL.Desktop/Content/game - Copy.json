@@ -1,0 +1,2748 @@
+{
+	"Name": {
+		"type": "string",
+		"value": "World"
+	},
+	"Sectors": {
+		"type": "table",
+		"value": [
+			{
+				"type": "table",
+				"class": "Sector",
+				"value": {
+					"Name": {
+						"type": "string",
+						"value": "Sector"
+					},
+					"Entities": {
+						"type": "table",
+						"value": [
+							{
+								"type": "table",
+								"class": "Dog",
+								"value": {
+									"Name": {
+										"type": "string",
+										"value": "Player"
+									},
+									"SpriteName": {
+										"type": "string",
+										"value": "RedDog"
+									},
+									"Transform": {
+										"type": "table",
+										"class": "Transform",
+										"value": {
+											"Position": {
+												"type": "vector",
+												"value": "vec4(750,450,0,0)"
+											},
+											"Rotation": {
+												"type": "float",
+												"value": 0
+											},
+											"Scale": {
+												"type": "vector",
+												"value": "vec4(100,100,0,0)"
+											}
+										}
+									},
+									"Collider": {
+										"type": "table",
+										"class": "CircleCollider",
+										"value": {
+											"CollisionChannel": {
+												"type": "integer",
+												"value": 3
+											},
+											"ColliderType": {
+												"type": "integer",
+												"value": 1
+											},
+											"IsTrigger": {
+												"type": "integer",
+												"value": 0
+											},
+											"Radius": {
+												"type": "float",
+												"value": 50
+											},
+											"Scale": {
+												"type": "float",
+												"value": 1
+											}
+										}
+									},
+									"BarkCollider": {
+										"type": "table",
+										"class": "CircleCollider",
+										"value": {
+											"CollisionChannel": {
+												"type": "integer",
+												"value": 3
+											},
+											"ColliderType": {
+												"type": "integer",
+												"value": 1
+											},
+											"IsTrigger": {
+												"type": "integer",
+												"value": 1
+											},
+											"Radius": {
+												"type": "float",
+												"value": 70
+											},
+											"Scale": {
+												"type": "float",
+												"value": 1
+											}
+										}
+									},
+									"BarkScale": {
+										"type": "float",
+										"value": 3
+									},
+									"BarkScaleDecreaseRate": {
+										"type": "float",
+										"value": 1
+									},
+									"Actions": {
+										"type": "table",
+										"value": [
+											{
+												"type": "table",
+												"class": "ReactionInputPlayer",
+												"value": {
+													"PlayerIndex": {
+														"type": "integer",
+														"value": 0
+													},
+													"Speed": {
+														"type": "float",
+														"value": 200
+													},
+													"Actions": {
+														"type": "table",
+														"value": [
+															{
+																"type": "table",
+																"class": "ActionPlaySound",
+																"value": {
+																	"FilePath": {
+																		"type": "string",
+																		"value": "UtsabBork.wav"
+																	},
+																	"IsSoundEffect": {
+																		"type": "integer",
+																		"value": 1
+																	}
+																}
+															}
+														]
+													}
+												}
+											}
+										]
+									}
+								}
+							},
+							{
+								"type": "table",
+								"class": "Dog",
+								"value": {
+									"Name": {
+										"type": "string",
+										"value": "Player"
+									},
+									"SpriteName": {
+										"type": "string",
+										"value": "BlueDog"
+									},
+									"Transform": {
+										"type": "table",
+										"class": "Transform",
+										"value": {
+											"Position": {
+												"type": "vector",
+												"value": "vec4(1050,450,0,0)"
+											},
+											"Rotation": {
+												"type": "float",
+												"value": 180
+											},
+											"Scale": {
+												"type": "vector",
+												"value": "vec4(100,100,0,0)"
+											}
+										}
+									},
+									"Collider": {
+										"type": "table",
+										"class": "CircleCollider",
+										"value": {
+											"CollisionChannel": {
+												"type": "integer",
+												"value": 4
+											},
+											"ColliderType": {
+												"type": "integer",
+												"value": 1
+											},
+											"IsTrigger": {
+												"type": "integer",
+												"value": 0
+											},
+											"Radius": {
+												"type": "float",
+												"value": 50
+											},
+											"Scale": {
+												"type": "float",
+												"value": 1
+											}
+										}
+									},
+									"BarkCollider": {
+										"type": "table",
+										"class": "CircleCollider",
+										"value": {
+											"CollisionChannel": {
+												"type": "integer",
+												"value": 4
+											},
+											"ColliderType": {
+												"type": "integer",
+												"value": 1
+											},
+											"IsTrigger": {
+												"type": "integer",
+												"value": 1
+											},
+											"Radius": {
+												"type": "float",
+												"value": 70
+											},
+											"Scale": {
+												"type": "float",
+												"value": 1
+											}
+										}
+									},
+									"BarkScale": {
+										"type": "float",
+										"value": 3
+									},
+									"BarkScaleDecreaseRate": {
+										"type": "float",
+										"value": 1
+									},
+									"Actions": {
+										"type": "table",
+										"value": [
+											{
+												"type": "table",
+												"class": "ReactionInputPlayer",
+												"value": {
+													"PlayerIndex": {
+														"type": "integer",
+														"value": 1
+													},
+													"Speed": {
+														"type": "float",
+														"value": 200
+													},
+													"Actions": {
+														"type": "table",
+														"value": [
+															{
+																"type": "table",
+																"class": "ActionPlaySound",
+																"value": {
+																	"FilePath": {
+																		"type": "string",
+																		"value": "UtsabBork.wav"
+																	},
+																	"IsSoundEffect": {
+																		"type": "integer",
+																		"value": 1
+																	}
+																}
+															}
+														]
+													}
+												}
+											}
+										]
+									}
+								}
+							},
+							{
+								"type": "table",
+								"class": "SheepSpawner",
+								"value": {
+									"Types": {
+										"type": "table",
+										"value": [
+											{
+												"type": "table",
+												"class": "Sheep",
+												"value": {
+													"Points": {
+														"type": "integer",
+														"value": 1
+													},
+													"MaxSpeed": {
+														"type": "float",
+														"value": 150
+													},
+													"SpriteName": {
+														"type": "string",
+														"value": "Sheep"
+													},
+													"Transform": {
+														"type": "table",
+														"class": "Transform",
+														"value": {
+															"Position": {
+																"type": "vector",
+																"value": "vec4(0, 0, 0, 0)"
+															},
+															"Rotation": {
+																"type": "float",
+																"value": 0
+															},
+															"Scale": {
+																"type": "vector",
+																"value": "vec4(50,50,0,0)"
+															}
+														}
+													},
+													"Collider": {
+														"type": "table",
+														"class": "CircleCollider",
+														"value": {
+															"CollisionChannel": {
+																"type": "integer",
+																"value": 2
+															},
+															"ColliderType": {
+																"type": "integer",
+																"value": 1
+															},
+															"IsTrigger": {
+																"type": "integer",
+																"value": 0
+															},
+															"Radius": {
+																"type": "float",
+																"value": 20
+															},
+															"Scale": {
+																"type": "float",
+																"value": 1
+															}
+														}
+													},
+													"Actions": {
+														"type": "table",
+														"value": [
+															{
+																"type": "table",
+																"class": "ReactionSheepPulse",
+																"value": {
+																	"RotationRange": {
+																		"type": "integer",
+																		"value": 360
+																	},
+																	"MinForceX": {
+																		"type": "integer",
+																		"value": 10000
+																	},
+																	"MaxForceX": {
+																		"type": "integer",
+																		"value": 10100
+																	},
+																	"MinForceY": {
+																		"type": "integer",
+																		"value": 10000
+																	},
+																	"MaxForceY": {
+																		"type": "integer",
+																		"value": 10100
+																	},
+																	"Actions": {
+																		"type": "table",
+																		"value": [
+																			{
+																				"type": "table",
+																				"class": "ActionTurn",
+																				"value": {
+																					"Name": {
+																						"type": "string",
+																						"value": " "
+																					},
+																					"Target": {
+																						"type": "string",
+																						"value": "Transform"
+																					},
+																					"TargetRotation": {
+																						"type": "float",
+																						"value": 0.0
+																					},
+																					"RotationRate": {
+																						"type": "float",
+																						"value": 0.0
+																					}
+																				}
+																			},
+																			{
+																				"type": "table",
+																				"class": "ActionAddForce",
+																				"value": {
+																					"Name": {
+																						"type": "string",
+																						"value": " "
+																					},
+																					"TargetAcceleration": {
+																						"type": "string",
+																						"value": "Acceleration"
+																					},
+																					"Force": {
+																						"type": "vector",
+																						"value": "vec4(0, 0, 0, 0)"
+																					}
+																				}
+																			}
+																		]
+																	}
+																}
+															},
+															{
+																"type": "table",
+																"class": "ReactionCollisionForce",
+																"value": {
+																	"Actions": {
+																		"type": "table",
+																		"value": [
+																			{
+																				"type": "table",
+																				"class": "ActionPlaySound",
+																				"value": {
+																					"FilePath": {
+																						"type": "string",
+																						"value": "JenniferBaaahh.wav"
+																					},
+																					"IsSoundEffect": {
+																						"type": "integer",
+																						"value": 1
+																					}
+																				}
+																			},
+																			{
+																				"type": "table",
+																				"class": "ActionAddForce",
+																				"value": {
+																					"Name": {
+																						"type": "string",
+																						"value": ""
+																					}
+																				}
+																			}
+																		]
+																	}
+																}
+															},
+															{
+																"type": "table",
+																"class": "ActionUpdatePosition",
+																"value": {
+																	"Name": {
+																		"type": "string",
+																		"value": "UpdatePosition"
+																	}
+																}
+															},
+															{
+																"type": "table",
+																"class": "ActionMovementDrag",
+																"value": {
+																	"Drag": {
+																		"type": "float",
+																		"value": 0.99
+																	}
+																}
+															}
+														]
+													}
+												}
+											},
+											{
+												"type": "table",
+												"class": "Sheep",
+												"value": {
+													"Points": {
+														"type": "integer",
+														"value": 10
+													},
+													"MaxSpeed": {
+														"type": "float",
+														"value": 150
+													},
+													"SpriteName": {
+														"type": "string",
+														"value": "GoldSheep"
+													},
+													"Transform": {
+														"type": "table",
+														"class": "Transform",
+														"value": {
+															"Position": {
+																"type": "vector",
+																"value": "vec4(0, 0, 0, 0)"
+															},
+															"Rotation": {
+																"type": "float",
+																"value": 0
+															},
+															"Scale": {
+																"type": "vector",
+																"value": "vec4(40,40,0,0)"
+															}
+														}
+													},
+													"Collider": {
+														"type": "table",
+														"class": "CircleCollider",
+														"value": {
+															"CollisionChannel": {
+																"type": "integer",
+																"value": 2
+															},
+															"ColliderType": {
+																"type": "integer",
+																"value": 1
+															},
+															"IsTrigger": {
+																"type": "integer",
+																"value": 0
+															},
+															"Radius": {
+																"type": "float",
+																"value": 20
+															},
+															"Scale": {
+																"type": "float",
+																"value": 1
+															}
+														}
+													},
+													"Actions": {
+														"type": "table",
+														"value": [
+															{
+																"type": "table",
+																"class": "ReactionSheepPulse",
+																"value": {
+																	"RotationRange": {
+																		"type": "integer",
+																		"value": 360
+																	},
+																	"MinForceX": {
+																		"type": "integer",
+																		"value": 10000
+																	},
+																	"MaxForceX": {
+																		"type": "integer",
+																		"value": 10100
+																	},
+																	"MinForceY": {
+																		"type": "integer",
+																		"value": 10000
+																	},
+																	"MaxForceY": {
+																		"type": "integer",
+																		"value": 10100
+																	},
+																	"Actions": {
+																		"type": "table",
+																		"value": [
+																			{
+																				"type": "table",
+																				"class": "ActionTurn",
+																				"value": {
+																					"Name": {
+																						"type": "string",
+																						"value": " "
+																					},
+																					"Target": {
+																						"type": "string",
+																						"value": "Transform"
+																					},
+																					"TargetRotation": {
+																						"type": "float",
+																						"value": 0.0
+																					},
+																					"RotationRate": {
+																						"type": "float",
+																						"value": 0.0
+																					}
+																				}
+																			},
+																			{
+																				"type": "table",
+																				"class": "ActionAddForce",
+																				"value": {
+																					"Name": {
+																						"type": "string",
+																						"value": " "
+																					},
+																					"TargetAcceleration": {
+																						"type": "string",
+																						"value": "Acceleration"
+																					},
+																					"Force": {
+																						"type": "vector",
+																						"value": "vec4(0, 0, 0, 0)"
+																					}
+																				}
+																			}
+																		]
+																	}
+																}
+															},
+															{
+																"type": "table",
+																"class": "ReactionCollisionForce",
+																"value": {
+																	"Actions": {
+																		"type": "table",
+																		"value": [
+																			{
+																				"type": "table",
+																				"class": "ActionPlaySound",
+																				"value": {
+																					"FilePath": {
+																						"type": "string",
+																						"value": "JenniferBaaahh.wav"
+																					},
+																					"IsSoundEffect": {
+																						"type": "integer",
+																						"value": 1
+																					}
+																				}
+																			},
+																			{
+																				"type": "table",
+																				"class": "ActionAddForce",
+																				"value": {
+																					"Name": {
+																						"type": "string",
+																						"value": ""
+																					}
+																				}
+																			}
+																		]
+																	}
+																}
+															},
+															{
+																"type": "table",
+																"class": "ActionUpdatePosition",
+																"value": {
+																	"Name": {
+																		"type": "string",
+																		"value": "UpdatePosition"
+																	}
+																}
+															},
+															{
+																"type": "table",
+																"class": "ActionMovementDrag",
+																"value": {
+																	"Drag": {
+																		"type": "float",
+																		"value": 0.99
+																	}
+																}
+															}
+														]
+													}
+												}
+											},
+											{
+												"type": "table",
+												"class": "Sheep",
+												"value": {
+													"Points": {
+														"type": "integer",
+														"value": -5
+													},
+													"MaxSpeed": {
+														"type": "float",
+														"value": 150
+													},
+													"SpriteName": {
+														"type": "string",
+														"value": "WolfSheep"
+													},
+													"Transform": {
+														"type": "table",
+														"class": "Transform",
+														"value": {
+															"Position": {
+																"type": "vector",
+																"value": "vec4(0, 0, 0, 0)"
+															},
+															"Rotation": {
+																"type": "float",
+																"value": 0
+															},
+															"Scale": {
+																"type": "vector",
+																"value": "vec4(60,40,0,0)"
+															}
+														}
+													},
+													"Collider": {
+														"type": "table",
+														"class": "CircleCollider",
+														"value": {
+															"CollisionChannel": {
+																"type": "integer",
+																"value": 2
+															},
+															"ColliderType": {
+																"type": "integer",
+																"value": 1
+															},
+															"IsTrigger": {
+																"type": "integer",
+																"value": 0
+															},
+															"Radius": {
+																"type": "float",
+																"value": 20
+															},
+															"Scale": {
+																"type": "float",
+																"value": 1
+															}
+														}
+													},
+													"Actions": {
+														"type": "table",
+														"value": [
+															{
+																"type": "table",
+																"class": "ReactionSheepPulse",
+																"value": {
+																	"RotationRange": {
+																		"type": "integer",
+																		"value": 360
+																	},
+																	"MinForceX": {
+																		"type": "integer",
+																		"value": 10000
+																	},
+																	"MaxForceX": {
+																		"type": "integer",
+																		"value": 10100
+																	},
+																	"MinForceY": {
+																		"type": "integer",
+																		"value": 10000
+																	},
+																	"MaxForceY": {
+																		"type": "integer",
+																		"value": 10100
+																	},
+																	"Actions": {
+																		"type": "table",
+																		"value": [
+																			{
+																				"type": "table",
+																				"class": "ActionTurn",
+																				"value": {
+																					"Name": {
+																						"type": "string",
+																						"value": " "
+																					},
+																					"Target": {
+																						"type": "string",
+																						"value": "Transform"
+																					},
+																					"TargetRotation": {
+																						"type": "float",
+																						"value": 0.0
+																					},
+																					"RotationRate": {
+																						"type": "float",
+																						"value": 0.0
+																					}
+																				}
+																			},
+																			{
+																				"type": "table",
+																				"class": "ActionAddForce",
+																				"value": {
+																					"Name": {
+																						"type": "string",
+																						"value": " "
+																					},
+																					"TargetAcceleration": {
+																						"type": "string",
+																						"value": "Acceleration"
+																					},
+																					"Force": {
+																						"type": "vector",
+																						"value": "vec4(0, 0, 0, 0)"
+																					}
+																				}
+																			}
+																		]
+																	}
+																}
+															},
+															{
+																"type": "table",
+																"class": "ReactionCollisionForce",
+																"value": {
+																	"Actions": {
+																		"type": "table",
+																		"value": [
+																			{
+																				"type": "table",
+																				"class": "ActionPlaySound",
+																				"value": {
+																					"FilePath": {
+																						"type": "string",
+																						"value": "SFXWolf.wav"
+																					},
+																					"IsSoundEffect": {
+																						"type": "integer",
+																						"value": 1
+																					}
+																				}
+																			},
+																			{
+																				"type": "table",
+																				"class": "ActionAddForce",
+																				"value": {
+																					"Name": {
+																						"type": "string",
+																						"value": ""
+																					}
+																				}
+																			}
+																		]
+																	}
+																}
+															},
+															{
+																"type": "table",
+																"class": "ActionUpdatePosition",
+																"value": {
+																	"Name": {
+																		"type": "string",
+																		"value": "UpdatePosition"
+																	}
+																}
+															},
+															{
+																"type": "table",
+																"class": "ActionMovementDrag",
+																"value": {
+																	"Drag": {
+																		"type": "float",
+																		"value": 0.99
+																	}
+																}
+															}
+														]
+													}
+												}
+											}
+										]
+									},
+									"Weights": {
+										"type": "integer",
+										"value": [ 80, 10, 10 ]
+									},
+									"MinDelay": {
+										"type": "integer",
+										"value": 2000
+									},
+									"MaxDelay": {
+										"type": "integer",
+										"value": 4000
+									},
+									"Actions": {
+										"type": "table",
+										"value": [
+											{
+												"type": "table",
+												"class": "ReactionSpawn",
+												"value": {
+													"Actions": {
+														"type": "table",
+														"value": [
+															{
+																"type": "table",
+																"class": "ActionSpawnSheep",
+																"value": {
+																	"Name": {
+																		"type": "string",
+																		"value": "spawn sheep"
+																	}
+																}
+															}
+														]
+													}
+												}
+											}
+										]
+									},
+									"SpriteName": {
+										"type": "string",
+										"value": "None"
+									},
+									"Transform": {
+										"type": "table",
+										"class": "Transform",
+										"value": {
+											"Position": {
+												"type": "vector",
+												"value": "vec4(900,200, 0, 0)"
+											},
+											"Rotation": {
+												"type": "float",
+												"value": 0
+											},
+											"Scale": {
+												"type": "vector",
+												"value": "vec4(0,0,0,0)"
+											}
+										}
+									},
+									"Collider": {
+										"type": "table",
+										"class": "BoxCollider",
+										"value": {
+											"Extents": {
+												"type": "vector",
+												"value": "vec4(85,50,0,0)"
+											},
+											"Scale": {
+												"type": "vector",
+												"value": "vec4(1,1,0,0)"
+											},
+											"IsTrigger": {
+												"type": "integer",
+												"value": 1
+											}
+										}
+									}
+								}
+							},
+							{
+								"type": "table",
+								"class": "SheepSpawner",
+								"value": {
+									"Types": {
+										"type": "table",
+										"value": [
+											{
+												"type": "table",
+												"class": "Sheep",
+												"value": {
+													"Points": {
+														"type": "integer",
+														"value": 1
+													},
+													"MaxSpeed": {
+														"type": "float",
+														"value": 150
+													},
+													"SpriteName": {
+														"type": "string",
+														"value": "Sheep"
+													},
+													"Transform": {
+														"type": "table",
+														"class": "Transform",
+														"value": {
+															"Position": {
+																"type": "vector",
+																"value": "vec4(0, 0, 0, 0)"
+															},
+															"Rotation": {
+																"type": "float",
+																"value": 0
+															},
+															"Scale": {
+																"type": "vector",
+																"value": "vec4(50,50,0,0)"
+															}
+														}
+													},
+													"Collider": {
+														"type": "table",
+														"class": "CircleCollider",
+														"value": {
+															"CollisionChannel": {
+																"type": "integer",
+																"value": 2
+															},
+															"ColliderType": {
+																"type": "integer",
+																"value": 1
+															},
+															"IsTrigger": {
+																"type": "integer",
+																"value": 0
+															},
+															"Radius": {
+																"type": "float",
+																"value": 20
+															},
+															"Scale": {
+																"type": "float",
+																"value": 1
+															}
+														}
+													},
+													"Actions": {
+														"type": "table",
+														"value": [
+															{
+																"type": "table",
+																"class": "ReactionSheepPulse",
+																"value": {
+																	"RotationRange": {
+																		"type": "integer",
+																		"value": 360
+																	},
+																	"MinForceX": {
+																		"type": "integer",
+																		"value": 10000
+																	},
+																	"MaxForceX": {
+																		"type": "integer",
+																		"value": 10100
+																	},
+																	"MinForceY": {
+																		"type": "integer",
+																		"value": 10000
+																	},
+																	"MaxForceY": {
+																		"type": "integer",
+																		"value": 10100
+																	},
+																	"Actions": {
+																		"type": "table",
+																		"value": [
+																			{
+																				"type": "table",
+																				"class": "ActionTurn",
+																				"value": {
+																					"Name": {
+																						"type": "string",
+																						"value": " "
+																					},
+																					"Target": {
+																						"type": "string",
+																						"value": "Transform"
+																					},
+																					"TargetRotation": {
+																						"type": "float",
+																						"value": 0.0
+																					},
+																					"RotationRate": {
+																						"type": "float",
+																						"value": 0.0
+																					}
+																				}
+																			},
+																			{
+																				"type": "table",
+																				"class": "ActionAddForce",
+																				"value": {
+																					"Name": {
+																						"type": "string",
+																						"value": " "
+																					},
+																					"TargetAcceleration": {
+																						"type": "string",
+																						"value": "Acceleration"
+																					},
+																					"Force": {
+																						"type": "vector",
+																						"value": "vec4(0, 0, 0, 0)"
+																					}
+																				}
+																			}
+																		]
+																	}
+																}
+															},
+															{
+																"type": "table",
+																"class": "ReactionCollisionForce",
+																"value": {
+																	"Actions": {
+																		"type": "table",
+																		"value": [
+																			{
+																				"type": "table",
+																				"class": "ActionPlaySound",
+																				"value": {
+																					"FilePath": {
+																						"type": "string",
+																						"value": "JenniferBaaahh.wav"
+																					},
+																					"IsSoundEffect": {
+																						"type": "integer",
+																						"value": 1
+																					}
+																				}
+																			},
+																			{
+																				"type": "table",
+																				"class": "ActionAddForce",
+																				"value": {
+																					"Name": {
+																						"type": "string",
+																						"value": ""
+																					}
+																				}
+																			}
+																		]
+																	}
+																}
+															},
+															{
+																"type": "table",
+																"class": "ActionUpdatePosition",
+																"value": {
+																	"Name": {
+																		"type": "string",
+																		"value": "UpdatePosition"
+																	}
+																}
+															},
+															{
+																"type": "table",
+																"class": "ActionMovementDrag",
+																"value": {
+																	"Drag": {
+																		"type": "float",
+																		"value": 0.99
+																	}
+																}
+															}
+														]
+													}
+												}
+											},
+											{
+												"type": "table",
+												"class": "Sheep",
+												"value": {
+													"Points": {
+														"type": "integer",
+														"value": 10
+													},
+													"MaxSpeed": {
+														"type": "float",
+														"value": 150
+													},
+													"SpriteName": {
+														"type": "string",
+														"value": "GoldSheep"
+													},
+													"Transform": {
+														"type": "table",
+														"class": "Transform",
+														"value": {
+															"Position": {
+																"type": "vector",
+																"value": "vec4(0, 0, 0, 0)"
+															},
+															"Rotation": {
+																"type": "float",
+																"value": 0
+															},
+															"Scale": {
+																"type": "vector",
+																"value": "vec4(40,40,0,0)"
+															}
+														}
+													},
+													"Collider": {
+														"type": "table",
+														"class": "CircleCollider",
+														"value": {
+															"CollisionChannel": {
+																"type": "integer",
+																"value": 2
+															},
+															"ColliderType": {
+																"type": "integer",
+																"value": 1
+															},
+															"IsTrigger": {
+																"type": "integer",
+																"value": 0
+															},
+															"Radius": {
+																"type": "float",
+																"value": 20
+															},
+															"Scale": {
+																"type": "float",
+																"value": 1
+															}
+														}
+													},
+													"Actions": {
+														"type": "table",
+														"value": [
+															{
+																"type": "table",
+																"class": "ReactionSheepPulse",
+																"value": {
+																	"RotationRange": {
+																		"type": "integer",
+																		"value": 360
+																	},
+																	"MinForceX": {
+																		"type": "integer",
+																		"value": 10000
+																	},
+																	"MaxForceX": {
+																		"type": "integer",
+																		"value": 10100
+																	},
+																	"MinForceY": {
+																		"type": "integer",
+																		"value": 10000
+																	},
+																	"MaxForceY": {
+																		"type": "integer",
+																		"value": 10100
+																	},
+																	"Actions": {
+																		"type": "table",
+																		"value": [
+																			{
+																				"type": "table",
+																				"class": "ActionTurn",
+																				"value": {
+																					"Name": {
+																						"type": "string",
+																						"value": " "
+																					},
+																					"Target": {
+																						"type": "string",
+																						"value": "Transform"
+																					},
+																					"TargetRotation": {
+																						"type": "float",
+																						"value": 0.0
+																					},
+																					"RotationRate": {
+																						"type": "float",
+																						"value": 0.0
+																					}
+																				}
+																			},
+																			{
+																				"type": "table",
+																				"class": "ActionAddForce",
+																				"value": {
+																					"Name": {
+																						"type": "string",
+																						"value": " "
+																					},
+																					"TargetAcceleration": {
+																						"type": "string",
+																						"value": "Acceleration"
+																					},
+																					"Force": {
+																						"type": "vector",
+																						"value": "vec4(0, 0, 0, 0)"
+																					}
+																				}
+																			}
+																		]
+																	}
+																}
+															},
+															{
+																"type": "table",
+																"class": "ReactionCollisionForce",
+																"value": {
+																	"Actions": {
+																		"type": "table",
+																		"value": [
+																			{
+																				"type": "table",
+																				"class": "ActionPlaySound",
+																				"value": {
+																					"FilePath": {
+																						"type": "string",
+																						"value": "JenniferBaaahh.wav"
+																					},
+																					"IsSoundEffect": {
+																						"type": "integer",
+																						"value": 1
+																					}
+																				}
+																			},
+																			{
+																				"type": "table",
+																				"class": "ActionAddForce",
+																				"value": {
+																					"Name": {
+																						"type": "string",
+																						"value": ""
+																					}
+																				}
+																			}
+																		]
+																	}
+																}
+															},
+															{
+																"type": "table",
+																"class": "ActionUpdatePosition",
+																"value": {
+																	"Name": {
+																		"type": "string",
+																		"value": "UpdatePosition"
+																	}
+																}
+															},
+															{
+																"type": "table",
+																"class": "ActionMovementDrag",
+																"value": {
+																	"Drag": {
+																		"type": "float",
+																		"value": 0.99
+																	}
+																}
+															}
+														]
+													}
+												}
+											},
+											{
+												"type": "table",
+												"class": "Sheep",
+												"value": {
+													"Points": {
+														"type": "integer",
+														"value": -5
+													},
+													"MaxSpeed": {
+														"type": "float",
+														"value": 150
+													},
+													"SpriteName": {
+														"type": "string",
+														"value": "WolfSheep"
+													},
+													"Transform": {
+														"type": "table",
+														"class": "Transform",
+														"value": {
+															"Position": {
+																"type": "vector",
+																"value": "vec4(0, 0, 0, 0)"
+															},
+															"Rotation": {
+																"type": "float",
+																"value": 0
+															},
+															"Scale": {
+																"type": "vector",
+																"value": "vec4(60,40,0,0)"
+															}
+														}
+													},
+													"Collider": {
+														"type": "table",
+														"class": "CircleCollider",
+														"value": {
+															"CollisionChannel": {
+																"type": "integer",
+																"value": 2
+															},
+															"ColliderType": {
+																"type": "integer",
+																"value": 1
+															},
+															"IsTrigger": {
+																"type": "integer",
+																"value": 0
+															},
+															"Radius": {
+																"type": "float",
+																"value": 20
+															},
+															"Scale": {
+																"type": "float",
+																"value": 1
+															}
+														}
+													},
+													"Actions": {
+														"type": "table",
+														"value": [
+															{
+																"type": "table",
+																"class": "ReactionSheepPulse",
+																"value": {
+																	"RotationRange": {
+																		"type": "integer",
+																		"value": 360
+																	},
+																	"MinForceX": {
+																		"type": "integer",
+																		"value": 10000
+																	},
+																	"MaxForceX": {
+																		"type": "integer",
+																		"value": 10100
+																	},
+																	"MinForceY": {
+																		"type": "integer",
+																		"value": 10000
+																	},
+																	"MaxForceY": {
+																		"type": "integer",
+																		"value": 10100
+																	},
+																	"Actions": {
+																		"type": "table",
+																		"value": [
+																			{
+																				"type": "table",
+																				"class": "ActionTurn",
+																				"value": {
+																					"Name": {
+																						"type": "string",
+																						"value": " "
+																					},
+																					"Target": {
+																						"type": "string",
+																						"value": "Transform"
+																					},
+																					"TargetRotation": {
+																						"type": "float",
+																						"value": 0.0
+																					},
+																					"RotationRate": {
+																						"type": "float",
+																						"value": 0.0
+																					}
+																				}
+																			},
+																			{
+																				"type": "table",
+																				"class": "ActionAddForce",
+																				"value": {
+																					"Name": {
+																						"type": "string",
+																						"value": " "
+																					},
+																					"TargetAcceleration": {
+																						"type": "string",
+																						"value": "Acceleration"
+																					},
+																					"Force": {
+																						"type": "vector",
+																						"value": "vec4(0, 0, 0, 0)"
+																					}
+																				}
+																			}
+																		]
+																	}
+																}
+															},
+															{
+																"type": "table",
+																"class": "ReactionCollisionForce",
+																"value": {
+																	"Actions": {
+																		"type": "table",
+																		"value": [
+																			{
+																				"type": "table",
+																				"class": "ActionPlaySound",
+																				"value": {
+																					"FilePath": {
+																						"type": "string",
+																						"value": "SFXWolf.wav"
+																					},
+																					"IsSoundEffect": {
+																						"type": "integer",
+																						"value": 1
+																					}
+																				}
+																			},
+																			{
+																				"type": "table",
+																				"class": "ActionAddForce",
+																				"value": {
+																					"Name": {
+																						"type": "string",
+																						"value": ""
+																					}
+																				}
+																			}
+																		]
+																	}
+																}
+															},
+															{
+																"type": "table",
+																"class": "ActionUpdatePosition",
+																"value": {
+																	"Name": {
+																		"type": "string",
+																		"value": "UpdatePosition"
+																	}
+																}
+															},
+															{
+																"type": "table",
+																"class": "ActionMovementDrag",
+																"value": {
+																	"Drag": {
+																		"type": "float",
+																		"value": 0.99
+																	}
+																}
+															}
+														]
+													}
+												}
+											}
+										]
+									},
+									"Weights": {
+										"type": "integer",
+										"value": [ 80, 10, 10 ]
+									},
+									"MinDelay": {
+										"type": "integer",
+										"value": 2000
+									},
+									"MaxDelay": {
+										"type": "integer",
+										"value": 4000
+									},
+									"Actions": {
+										"type": "table",
+										"value": [
+											{
+												"type": "table",
+												"class": "ReactionSpawn",
+												"value": {
+													"Actions": {
+														"type": "table",
+														"value": [
+															{
+																"type": "table",
+																"class": "ActionSpawnSheep",
+																"value": {
+																	"Name": {
+																		"type": "string",
+																		"value": "spawn sheep"
+																	}
+																}
+															}
+														]
+													}
+												}
+											}
+										]
+									},
+									"SpriteName": {
+										"type": "string",
+										"value": "None"
+									},
+									"Transform": {
+										"type": "table",
+										"class": "Transform",
+										"value": {
+											"Position": {
+												"type": "vector",
+												"value": "vec4(900,800, 0, 0)"
+											},
+											"Rotation": {
+												"type": "float",
+												"value": 0
+											},
+											"Scale": {
+												"type": "vector",
+												"value": "vec4(0,0,0,0)"
+											}
+										}
+									},
+									"Collider": {
+										"type": "table",
+										"class": "BoxCollider",
+										"value": {
+											"Extents": {
+												"type": "vector",
+												"value": "vec4(85,100,0,0)"
+											},
+											"Scale": {
+												"type": "vector",
+												"value": "vec4(1,1,0,0)"
+											},
+											"IsTrigger": {
+												"type": "integer",
+												"value": 1
+											}
+										}
+									}
+								}
+							},
+							{
+								"type": "table",
+								"class": "Pusher",
+								"value": {
+									"Force": {
+										"type": "vector",
+										"value": "vec4(0,1000,0,0)"
+									},
+									"SpriteName": {
+										"type": "string",
+										"value": "None"
+									},
+									"Transform": {
+										"type": "table",
+										"class": "Transform",
+										"value": {
+											"Position": {
+												"type": "vector",
+												"value": "vec4(900, 150, 0, 0)"
+											},
+											"Rotation": {
+												"type": "float",
+												"value": 0
+											},
+											"Scale": {
+												"type": "vector",
+												"value": "vec4(0,0,0,0)"
+											}
+										}
+									},
+									"Collider": {
+										"type": "table",
+										"class": "BoxCollider",
+										"value": {
+											"Extents": {
+												"type": "vector",
+												"value": "vec4(800,80,0,0)"
+											},
+											"Scale": {
+												"type": "vector",
+												"value": "vec4(1,1,0,0)"
+											},
+											"IsTrigger": {
+												"type": "integer",
+												"value": 1
+											},
+											"CollisionChannel": {
+												"type": "integer",
+												"value": 0
+											},
+											"ColliderType": {
+												"type": "integer",
+												"value": 0
+											}
+										}
+									}
+								}
+							},
+							{
+								"type": "table",
+								"class": "Pusher",
+								"value": {
+									"Force": {
+										"type": "vector",
+										"value": "vec4(0,-1000,0,0)"
+									},
+									"SpriteName": {
+										"type": "string",
+										"value": "None"
+									},
+									"Transform": {
+										"type": "table",
+										"class": "Transform",
+										"value": {
+											"Position": {
+												"type": "vector",
+												"value": "vec4(900, 800, 0, 0)"
+											},
+											"Rotation": {
+												"type": "float",
+												"value": 0
+											},
+											"Scale": {
+												"type": "vector",
+												"value": "vec4(0,0,0,0)"
+											}
+										}
+									},
+									"Collider": {
+										"type": "table",
+										"class": "BoxCollider",
+										"value": {
+											"Extents": {
+												"type": "vector",
+												"value": "vec4(800,80,0,0)"
+											},
+											"Scale": {
+												"type": "vector",
+												"value": "vec4(1,1,0,0)"
+											},
+											"IsTrigger": {
+												"type": "integer",
+												"value": 1
+											},
+											"CollisionChannel": {
+												"type": "integer",
+												"value": 0
+											},
+											"ColliderType": {
+												"type": "integer",
+												"value": 0
+											}
+										}
+									}
+								}
+							},
+							{
+								"type": "table",
+								"class": "ScoreVolume",
+								"value": {
+									"SpriteName": {
+										"type": "string",
+										"value": "None"
+									},
+									"Transform": {
+										"type": "table",
+										"class": "Transform",
+										"value": {
+											"Position": {
+												"type": "vector",
+												"value": "vec4(75, 450, 0, 0)"
+											},
+											"Rotation": {
+												"type": "float",
+												"value": 0
+											},
+											"Scale": {
+												"type": "vector",
+												"value": "vec4(0,0,0,0)"
+											}
+										}
+									},
+									"Collider": {
+										"type": "table",
+										"class": "BoxCollider",
+										"value": {
+											"CollisionChannel": {
+												"type": "integer",
+												"value": 1
+											},
+											"ColliderType": {
+												"type": "integer",
+												"value": 0
+											},
+											"IsTrigger": {
+												"type": "integer",
+												"value": 0
+											},
+											"Extents": {
+												"type": "vector",
+												"value": "vec4(80,80,0,0)"
+											},
+											"Scale": {
+												"type": "vector",
+												"value": "vec4(1,1,0,0)"
+											}
+										}
+									},
+									"IsPlayerOneScore": {
+										"type": "integer",
+										"value": 1
+									},
+									"Actions": {
+										"type": "table",
+										"value": [
+											{
+												"type": "table",
+												"class": "ReactionCollisionScore",
+												"value": {
+													"Name": {
+														"type": "string",
+														"value": "ScoreReaction"
+													}
+												}
+											}
+										]
+									}
+								}
+							},
+							{
+								"type": "table",
+								"class": "ScoreVolume",
+								"value": {
+									"SpriteName": {
+										"type": "string",
+										"value": "None"
+									},
+									"Transform": {
+										"type": "table",
+										"class": "Transform",
+										"value": {
+											"Position": {
+												"type": "vector",
+												"value": "vec4(1745, 450, 0, 0)"
+											},
+											"Rotation": {
+												"type": "float",
+												"value": 0
+											},
+											"Scale": {
+												"type": "vector",
+												"value": "vec4(0,0,0,0)"
+											}
+										}
+									},
+									"Collider": {
+										"type": "table",
+										"class": "BoxCollider",
+										"value": {
+											"CollisionChannel": {
+												"type": "integer",
+												"value": 1
+											},
+											"ColliderType": {
+												"type": "integer",
+												"value": 0
+											},
+											"IsTrigger": {
+												"type": "integer",
+												"value": 0
+											},
+											"Extents": {
+												"type": "vector",
+												"value": "vec4(80,80,0,0)"
+											},
+											"Scale": {
+												"type": "vector",
+												"value": "vec4(1,1,0,0)"
+											}
+										}
+									},
+									"IsPlayerOneScore": {
+										"type": "integer",
+										"value": 0
+									},
+									"Actions": {
+										"type": "table",
+										"value": [
+											{
+												"type": "table",
+												"class": "ReactionCollisionScore",
+												"value": {
+													"Name": {
+														"type": "string",
+														"value": "ScoreReaction"
+													}
+												}
+											}
+										]
+									}
+								}
+							},
+							{
+								"type": "table",
+								"class": "GameObject",
+								"value": {
+									"SpriteName": {
+										"type": "string",
+										"value": "None"
+									},
+									"Transform": {
+										"type": "table",
+										"class": "Transform",
+										"value": {
+											"Position": {
+												"type": "vector",
+												"value": "vec4(512.5, 75, 0, 0)"
+											},
+											"Rotation": {
+												"type": "float",
+												"value": 0
+											},
+											"Scale": {
+												"type": "vector",
+												"value": "vec4(0,0,0,0)"
+											}
+										}
+									},
+									"Collider": {
+										"type": "table",
+										"class": "BoxCollider",
+										"value": {
+											"CollisionChannel": {
+												"type": "integer",
+												"value": 0
+											},
+											"ColliderType": {
+												"type": "integer",
+												"value": 0
+											},
+											"IsTrigger": {
+												"type": "integer",
+												"value": 0
+											},
+											"Extents": {
+												"type": "vector",
+												"value": "vec4(290,75,0,0)"
+											},
+											"Scale": {
+												"type": "vector",
+												"value": "vec4(1,1,0,0)"
+											}
+										}
+									}
+								}
+							},
+							{
+								"type": "table",
+								"class": "GameObject",
+								"value": {
+									"SpriteName": {
+										"type": "string",
+										"value": "None"
+									},
+									"Transform": {
+										"type": "table",
+										"class": "Transform",
+										"value": {
+											"Position": {
+												"type": "vector",
+												"value": "vec4(900, -5, 0, 0)"
+											},
+											"Rotation": {
+												"type": "float",
+												"value": 0
+											},
+											"Scale": {
+												"type": "vector",
+												"value": "vec4(0,0,0,0)"
+											}
+										}
+									},
+									"Collider": {
+										"type": "table",
+										"class": "BoxCollider",
+										"value": {
+											"CollisionChannel": {
+												"type": "integer",
+												"value": 0
+											},
+											"ColliderType": {
+												"type": "integer",
+												"value": 0
+											},
+											"IsTrigger": {
+												"type": "integer",
+												"value": 0
+											},
+											"Extents": {
+												"type": "vector",
+												"value": "vec4(100,5,0,0)"
+											},
+											"Scale": {
+												"type": "vector",
+												"value": "vec4(1,1,0,0)"
+											}
+										}
+									}
+								}
+							},
+							{
+								"type": "table",
+								"class": "GameObject",
+								"value": {
+									"SpriteName": {
+										"type": "string",
+										"value": "None"
+									},
+									"Transform": {
+										"type": "table",
+										"class": "Transform",
+										"value": {
+											"Position": {
+												"type": "vector",
+												"value": "vec4(1287.5,75, 0, 0)"
+											},
+											"Rotation": {
+												"type": "float",
+												"value": 0
+											},
+											"Scale": {
+												"type": "vector",
+												"value": "vec4(0,0,0,0)"
+											}
+										}
+									},
+									"Collider": {
+										"type": "table",
+										"class": "BoxCollider",
+										"value": {
+											"CollisionChannel": {
+												"type": "integer",
+												"value": 0
+											},
+											"ColliderType": {
+												"type": "integer",
+												"value": 0
+											},
+											"IsTrigger": {
+												"type": "integer",
+												"value": 0
+											},
+											"Extents": {
+												"type": "vector",
+												"value": "vec4(290,75,0,0)"
+											},
+											"Scale": {
+												"type": "vector",
+												"value": "vec4(1,1,0,0)"
+											}
+										}
+									}
+								}
+							},
+							{
+								"type": "table",
+								"class": "GameObject",
+								"value": {
+									"SpriteName": {
+										"type": "string",
+										"value": "None"
+									},
+									"Transform": {
+										"type": "table",
+										"class": "Transform",
+										"value": {
+											"Position": {
+												"type": "vector",
+												"value": "vec4(1682.5,262.5, 0, 0)"
+											},
+											"Rotation": {
+												"type": "float",
+												"value": 0
+											},
+											"Scale": {
+												"type": "vector",
+												"value": "vec4(0,0,0,0)"
+											}
+										}
+									},
+									"Collider": {
+										"type": "table",
+										"class": "BoxCollider",
+										"value": {
+											"CollisionChannel": {
+												"type": "integer",
+												"value": 0
+											},
+											"ColliderType": {
+												"type": "integer",
+												"value": 0
+											},
+											"IsTrigger": {
+												"type": "integer",
+												"value": 0
+											},
+											"Extents": {
+												"type": "vector",
+												"value": "vec4(112.5,112.5,0,0)"
+											},
+											"Scale": {
+												"type": "vector",
+												"value": "vec4(1,1,0,0)"
+											}
+										}
+									}
+								}
+							},
+							{
+								"type": "table",
+								"class": "GameObject",
+								"value": {
+									"SpriteName": {
+										"type": "string",
+										"value": "None"
+									},
+									"Transform": {
+										"type": "table",
+										"class": "Transform",
+										"value": {
+											"Position": {
+												"type": "vector",
+												"value": "vec4(1805,462.5, 0, 0)"
+											},
+											"Rotation": {
+												"type": "float",
+												"value": 0
+											},
+											"Scale": {
+												"type": "vector",
+												"value": "vec4(0,0,0,0)"
+											}
+										}
+									},
+									"Collider": {
+										"type": "table",
+										"class": "BoxCollider",
+										"value": {
+											"CollisionChannel": {
+												"type": "integer",
+												"value": 0
+											},
+											"ColliderType": {
+												"type": "integer",
+												"value": 0
+											},
+											"IsTrigger": {
+												"type": "integer",
+												"value": 0
+											},
+											"Extents": {
+												"type": "vector",
+												"value": "vec4(5,90,0,0)"
+											},
+											"Scale": {
+												"type": "vector",
+												"value": "vec4(1,1,0,0)"
+											}
+										}
+									}
+								}
+							},
+							{
+								"type": "table",
+								"class": "GameObject",
+								"value": {
+									"SpriteName": {
+										"type": "string",
+										"value": "None"
+									},
+									"Transform": {
+										"type": "table",
+										"class": "Transform",
+										"value": {
+											"Position": {
+												"type": "vector",
+												"value": "vec4(1682.6,662.5, 0, 0)"
+											},
+											"Rotation": {
+												"type": "float",
+												"value": 0
+											},
+											"Scale": {
+												"type": "vector",
+												"value": "vec4(0,0,0,0)"
+											}
+										}
+									},
+									"Collider": {
+										"type": "table",
+										"class": "BoxCollider",
+										"value": {
+											"CollisionChannel": {
+												"type": "integer",
+												"value": 0
+											},
+											"ColliderType": {
+												"type": "integer",
+												"value": 0
+											},
+											"IsTrigger": {
+												"type": "integer",
+												"value": 0
+											},
+											"Extents": {
+												"type": "vector",
+												"value": "vec4(112.5,112.5,0,0)"
+											},
+											"Scale": {
+												"type": "vector",
+												"value": "vec4(1,1,0,0)"
+											}
+										}
+									}
+								}
+							},
+							{
+								"type": "table",
+								"class": "GameObject",
+								"value": {
+									"SpriteName": {
+										"type": "string",
+										"value": "None"
+									},
+									"Transform": {
+										"type": "table",
+										"class": "Transform",
+										"value": {
+											"Position": {
+												"type": "vector",
+												"value": "vec4(1287.5,875, 0, 0)"
+											},
+											"Rotation": {
+												"type": "float",
+												"value": 0
+											},
+											"Scale": {
+												"type": "vector",
+												"value": "vec4(0,0,0,0)"
+											}
+										}
+									},
+									"Collider": {
+										"type": "table",
+										"class": "BoxCollider",
+										"value": {
+											"CollisionChannel": {
+												"type": "integer",
+												"value": 0
+											},
+											"ColliderType": {
+												"type": "integer",
+												"value": 0
+											},
+											"IsTrigger": {
+												"type": "integer",
+												"value": 0
+											},
+											"Extents": {
+												"type": "vector",
+												"value": "vec4(290,75,0,0)"
+											},
+											"Scale": {
+												"type": "vector",
+												"value": "vec4(1,1,0,0)"
+											}
+										}
+									}
+								}
+							},
+							{
+								"type": "table",
+								"class": "GameObject",
+								"value": {
+									"SpriteName": {
+										"type": "string",
+										"value": "None"
+									},
+									"Transform": {
+										"type": "table",
+										"class": "Transform",
+										"value": {
+											"Position": {
+												"type": "vector",
+												"value": "vec4(900, 905, 0, 0)"
+											},
+											"Rotation": {
+												"type": "float",
+												"value": 0
+											},
+											"Scale": {
+												"type": "vector",
+												"value": "vec4(0,0,0,0)"
+											}
+										}
+									},
+									"Collider": {
+										"type": "table",
+										"class": "BoxCollider",
+										"value": {
+											"CollisionChannel": {
+												"type": "integer",
+												"value": 0
+											},
+											"ColliderType": {
+												"type": "integer",
+												"value": 0
+											},
+											"IsTrigger": {
+												"type": "integer",
+												"value": 0
+											},
+											"Extents": {
+												"type": "vector",
+												"value": "vec4(100,5,0,0)"
+											},
+											"Scale": {
+												"type": "vector",
+												"value": "vec4(1,1,0,0)"
+											}
+										}
+									}
+								}
+							},
+							{
+								"type": "table",
+								"class": "GameObject",
+								"value": {
+									"SpriteName": {
+										"type": "string",
+										"value": "None"
+									},
+									"Transform": {
+										"type": "table",
+										"class": "Transform",
+										"value": {
+											"Position": {
+												"type": "vector",
+												"value": "vec4(512.5,875, 0, 0)"
+											},
+											"Rotation": {
+												"type": "float",
+												"value": 0
+											},
+											"Scale": {
+												"type": "vector",
+												"value": "vec4(0,0,0,0)"
+											}
+										}
+									},
+									"Collider": {
+										"type": "table",
+										"class": "BoxCollider",
+										"value": {
+											"CollisionChannel": {
+												"type": "integer",
+												"value": 0
+											},
+											"ColliderType": {
+												"type": "integer",
+												"value": 0
+											},
+											"IsTrigger": {
+												"type": "integer",
+												"value": 0
+											},
+											"Extents": {
+												"type": "vector",
+												"value": "vec4(290,75,0,0)"
+											},
+											"Scale": {
+												"type": "vector",
+												"value": "vec4(1,1,0,0)"
+											}
+										}
+									}
+								}
+							},
+							{
+								"type": "table",
+								"class": "GameObject",
+								"value": {
+									"SpriteName": {
+										"type": "string",
+										"value": "None"
+									},
+									"Transform": {
+										"type": "table",
+										"class": "Transform",
+										"value": {
+											"Position": {
+												"type": "vector",
+												"value": "vec4(112.5,662.5, 0, 0)"
+											},
+											"Rotation": {
+												"type": "float",
+												"value": 0
+											},
+											"Scale": {
+												"type": "vector",
+												"value": "vec4(0,0,0,0)"
+											}
+										}
+									},
+									"Collider": {
+										"type": "table",
+										"class": "BoxCollider",
+										"value": {
+											"CollisionChannel": {
+												"type": "integer",
+												"value": 0
+											},
+											"ColliderType": {
+												"type": "integer",
+												"value": 0
+											},
+											"IsTrigger": {
+												"type": "integer",
+												"value": 0
+											},
+											"Extents": {
+												"type": "vector",
+												"value": "vec4(112.5,112.5,0,0)"
+											},
+											"Scale": {
+												"type": "vector",
+												"value": "vec4(1,1,0,0)"
+											}
+										}
+									}
+								}
+							},
+							{
+								"type": "table",
+								"class": "GameObject",
+								"value": {
+									"SpriteName": {
+										"type": "string",
+										"value": "None"
+									},
+									"Transform": {
+										"type": "table",
+										"class": "Transform",
+										"value": {
+											"Position": {
+												"type": "vector",
+												"value": "vec4(-5,462.5, 0, 0)"
+											},
+											"Rotation": {
+												"type": "float",
+												"value": 0
+											},
+											"Scale": {
+												"type": "vector",
+												"value": "vec4(0,0,0,0)"
+											}
+										}
+									},
+									"Collider": {
+										"type": "table",
+										"class": "BoxCollider",
+										"value": {
+											"CollisionChannel": {
+												"type": "integer",
+												"value": 0
+											},
+											"ColliderType": {
+												"type": "integer",
+												"value": 0
+											},
+											"IsTrigger": {
+												"type": "integer",
+												"value": 0
+											},
+											"Extents": {
+												"type": "vector",
+												"value": "vec4(5,90,0,0)"
+											},
+											"Scale": {
+												"type": "vector",
+												"value": "vec4(1,1,0,0)"
+											}
+										}
+									}
+								}
+							},
+							{
+								"type": "table",
+								"class": "GameObject",
+								"value": {
+									"SpriteName": {
+										"type": "string",
+										"value": "None"
+									},
+									"Transform": {
+										"type": "table",
+										"class": "Transform",
+										"value": {
+											"Position": {
+												"type": "vector",
+												"value": "vec4(112.5,262.5, 0, 0)"
+											},
+											"Rotation": {
+												"type": "float",
+												"value": 0
+											},
+											"Scale": {
+												"type": "vector",
+												"value": "vec4(0,0,0,0)"
+											}
+										}
+									},
+									"Collider": {
+										"type": "table",
+										"class": "BoxCollider",
+										"value": {
+											"CollisionChannel": {
+												"type": "integer",
+												"value": 0
+											},
+											"ColliderType": {
+												"type": "integer",
+												"value": 0
+											},
+											"IsTrigger": {
+												"type": "integer",
+												"value": 0
+											},
+											"Extents": {
+												"type": "vector",
+												"value": "vec4(112.5,112.5,0,0)"
+											},
+											"Scale": {
+												"type": "vector",
+												"value": "vec4(1,1,0,0)"
+											}
+										}
+									}
+								}
+							},
+							{
+								"type": "table",
+								"class": "GameObject",
+								"value": {
+									"SpriteName": {
+										"type": "string",
+										"value": "None"
+									},
+									"Transform": {
+										"type": "table",
+										"class": "Transform",
+										"value": {
+											"Position": {
+												"type": "vector",
+												"value": "vec4(225,150, 0, 0)"
+											},
+											"Rotation": {
+												"type": "float",
+												"value": 0
+											},
+											"Scale": {
+												"type": "vector",
+												"value": "vec4(0,0,0,0)"
+											}
+										}
+									},
+									"Collider": {
+										"type": "table",
+										"class": "CircleCollider",
+										"value": {
+											"CollisionChannel": {
+												"type": "integer",
+												"value": 0
+											},
+											"ColliderType": {
+												"type": "integer",
+												"value": 0
+											},
+											"IsTrigger": {
+												"type": "integer",
+												"value": 0
+											},
+											"Radius": {
+												"type": "float",
+												"value": 10
+											},
+											"Scale": {
+												"type": "float",
+												"value": 1
+											}
+										}
+									}
+								}
+							},
+							{
+								"type": "table",
+								"class": "GameObject",
+								"value": {
+									"SpriteName": {
+										"type": "string",
+										"value": "None"
+									},
+									"Transform": {
+										"type": "table",
+										"class": "Transform",
+										"value": {
+											"Position": {
+												"type": "vector",
+												"value": "vec4(1575,150, 0, 0)"
+											},
+											"Rotation": {
+												"type": "float",
+												"value": 0
+											},
+											"Scale": {
+												"type": "vector",
+												"value": "vec4(0,0,0,0)"
+											}
+										}
+									},
+									"Collider": {
+										"type": "table",
+										"class": "CircleCollider",
+										"value": {
+											"CollisionChannel": {
+												"type": "integer",
+												"value": 0
+											},
+											"ColliderType": {
+												"type": "integer",
+												"value": 0
+											},
+											"IsTrigger": {
+												"type": "integer",
+												"value": 0
+											},
+											"Radius": {
+												"type": "float",
+												"value": 10
+											},
+											"Scale": {
+												"type": "float",
+												"value": 1
+											}
+										}
+									}
+								}
+							},
+							{
+								"type": "table",
+								"class": "GameObject",
+								"value": {
+									"SpriteName": {
+										"type": "string",
+										"value": "None"
+									},
+									"Transform": {
+										"type": "table",
+										"class": "Transform",
+										"value": {
+											"Position": {
+												"type": "vector",
+												"value": "vec4(225,800, 0, 0)"
+											},
+											"Rotation": {
+												"type": "float",
+												"value": 0
+											},
+											"Scale": {
+												"type": "vector",
+												"value": "vec4(0,0,0,0)"
+											}
+										}
+									},
+									"Collider": {
+										"type": "table",
+										"class": "CircleCollider",
+										"value": {
+											"CollisionChannel": {
+												"type": "integer",
+												"value": 0
+											},
+											"ColliderType": {
+												"type": "integer",
+												"value": 0
+											},
+											"IsTrigger": {
+												"type": "integer",
+												"value": 0
+											},
+											"Radius": {
+												"type": "float",
+												"value": 10
+											},
+											"Scale": {
+												"type": "float",
+												"value": 1
+											}
+										}
+									}
+								}
+							},
+							{
+								"type": "table",
+								"class": "GameObject",
+								"value": {
+									"SpriteName": {
+										"type": "string",
+										"value": "None"
+									},
+									"Transform": {
+										"type": "table",
+										"class": "Transform",
+										"value": {
+											"Position": {
+												"type": "vector",
+												"value": "vec4(1575,800, 0, 0)"
+											},
+											"Rotation": {
+												"type": "float",
+												"value": 0
+											},
+											"Scale": {
+												"type": "vector",
+												"value": "vec4(0,0,0,0)"
+											}
+										}
+									},
+									"Collider": {
+										"type": "table",
+										"class": "CircleCollider",
+										"value": {
+											"CollisionChannel": {
+												"type": "integer",
+												"value": 0
+											},
+											"ColliderType": {
+												"type": "integer",
+												"value": 0
+											},
+											"IsTrigger": {
+												"type": "integer",
+												"value": 0
+											},
+											"Radius": {
+												"type": "float",
+												"value": 10
+											},
+											"Scale": {
+												"type": "float",
+												"value": 1
+											}
+										}
+									}
+								}
+							}
+						]
+					}
+				}
+			}
+		]
+	}
+}

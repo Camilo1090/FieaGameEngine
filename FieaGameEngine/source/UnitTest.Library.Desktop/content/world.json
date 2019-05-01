@@ -1,0 +1,116 @@
+{
+	"Name": {
+		"type": "string",
+		"value": "Test World"
+	},
+	"Sectors": {
+		"type": "table",
+		"value": [
+			{
+				"type": "table",
+				"class": "Sector",
+				"value": {
+					"Name": {
+						"type": "string",
+						"value": "Sector 1"
+					},
+					"Entities": {
+						"type": "table",
+						"value": [
+							{
+								"type": "table",
+								"class": "Entity",
+								"value": {
+									"Name": {
+										"type": "string",
+										"value": "Sector 1 - Entity 1"
+									}
+								}
+							}
+						]
+					}
+				}
+			},
+			{
+				"type": "table",
+				"class": "Sector",
+				"value": {
+					"Name": {
+						"type": "string",
+						"value": "Sector 2"
+					},
+					"Entities": {
+						"type": "table",
+						"value": [
+							{
+								"type": "table",
+								"class": "Entity",
+								"value": {
+									"Name": {
+										"type": "string",
+										"value": "Sector 2 - Entity 1"
+									}
+								}
+							},
+							{
+								"type": "table",
+								"class": "Entity",
+								"value": {
+									"Name": {
+										"type": "string",
+										"value": "Sector 2 - Entity 2"
+									}
+								}
+							}
+						]
+					}
+				}
+			},
+			{
+				"type": "table",
+				"class": "Sector",
+				"value": {
+					"Name": {
+						"type": "string",
+						"value": "Sector 3"
+					},
+					"Entities": {
+						"type": "table",
+						"value": [
+							{
+								"type": "table",
+								"class": "Entity",
+								"value": {
+									"Name": {
+										"type": "string",
+										"value": "Sector 3 - Entity 1"
+									}
+								}
+							},
+							{
+								"type": "table",
+								"class": "Entity",
+								"value": {
+									"Name": {
+										"type": "string",
+										"value": "Sector 3 - Entity 2"
+									}
+								}
+							},
+							{
+								"type": "table",
+								"class": "Entity",
+								"value": {
+									"Name": {
+										"type": "string",
+										"value": "Sector 3 - Entity 3"
+									}
+								}
+							}
+						]
+					}
+				}
+			}
+		]
+	}
+}
